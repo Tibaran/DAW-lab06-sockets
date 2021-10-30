@@ -33,4 +33,4 @@ io.on("connection", (socket) => {
     });
   
 });
-httpServer.listen(3000, ()=>{console.log("El servidor esta corriendo en puerto 3000")});
+httpServer.listen(process.env.PORT || 3000, ()=>{console.log("El servidor esta corriendo en puerto 3000")});
